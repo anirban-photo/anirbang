@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="14dp"
+    android:background="#171A20">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="ANIRBAN 360 · PROJECT STATUS" android:textColor="#F5B84B" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:id="@+id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↻" android:textColor="#FFFFFF" android:textSize="22sp" android:paddingStart="10dp" android:paddingEnd="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="7dp">
+        <TextView android:id="@+id/percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:textColor="#FFFFFF" android:textSize="30sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  0 / 6 completed" android:textColor="#B8C0CC" android:textSize="12sp"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="8dp" android:max="100" android:progress="0" android:progressTint="#F5B84B" android:progressBackgroundTint="#424751"/>
+    <TextView android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Loading tracker…" android:textColor="#D9DEE7" android:textSize="11sp" android:paddingTop="7dp"/>
+    <TextView android:id="@+id/updated" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Last sync: —" android:textColor="#8D96A5" android:textSize="10sp" android:paddingTop="3dp"/>
+</LinearLayout>
