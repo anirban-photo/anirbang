@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:theme="@android:style/Theme.Material.NoActionBar" android:label="ANIRBAN 360 Widget" android:allowBackup="false" android:supportsRtl="true">
+        <activity android:name=".SettingsActivity" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+        <receiver android:name=".TrackerWidgetProvider" android:exported="true">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="in.anirban360.widget.REFRESH"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/tracker_widget_info"/>
+        </receiver>
+    </application>
+</manifest>
